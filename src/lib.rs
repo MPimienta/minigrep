@@ -14,7 +14,7 @@ pub fn run(config: Config) -> Result<(), Box<dyn Error>> {
     };
 
     for line in results {
-        println!("{} (line {})", line.values().next().unwrap(), line.keys().next().unwrap());
+        println!("(line {}) {} ", line.keys().next().unwrap(), line.values().next().unwrap());
     }
 
     Ok(())
